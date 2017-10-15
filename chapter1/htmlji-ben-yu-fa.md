@@ -48,6 +48,7 @@ loop="2" bgcolor="yellow" 他们叫做标签的属性
                 right：向右
                 up：向上
             scrollamount：设定字幕滚动的速度，单位像素
+            scrolldelay：设定字幕两次滚动之间的延迟，单位毫秒
 ```
 
 ## 3、**颜色的表示：**
