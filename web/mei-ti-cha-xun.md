@@ -29,6 +29,10 @@ CSS3媒体查询可以让我们针对特定的设备能力或条件为网页应�
 ## 媒体查询的语法
 
 ```
+body{
+    background-color:orange;
+}
+
 @media screen and （min-width：320px）{
     body{
         background-color:yellow;
