@@ -63,14 +63,17 @@
 在盒子里自动插入空白以及对其元素，自动对齐元素间的空白
 ```
 
-# 2、Flexbox
+# 2、Flexbox的前缀
 
 ```
 flex在使用的时候，由于新特性的原因需要加上前缀
     -ms-      是    Microsof
     -webkit-  是    WebKit
     -moz-     是    Mozilla
+    
+可以使用工具 Autoprefixer
 
+sublime Text https://github.com/sindresorhus/sublime-autoprefixer。
 ```
 
 
