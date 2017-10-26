@@ -192,12 +192,24 @@ meta标签是网页与移动浏览器的借口。网页通过这个标签告诉�
 或者设置一个比例（比如2.0，即实际大小的两倍）。
     例： 变为实际大小的二倍
     <meta name="viewport" content="initial-scale=2.0,width=device-width">
-    
+
     <meta name="viewport" content="width=device-width, maximum-scale=3,minimum-scale=0.5" />
-    
+
     禁止用户缩放
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+```
 
+## 交互媒体设备
+
+```
+指针媒体特性用于查询鼠标之类的指针设备是否存在，以及存在时其精确地位置。如果设备有多种输入机制，
+指针媒体特性必须反映由用户代理决定的‘主’输入机制的特征
+
+指针特性有三个值:
+    coarse 触摸屏设备中的手指
+    fine   鼠标、手写笔等
+    none
+    
 ```
 
 
