@@ -82,7 +82,16 @@ sublime Text https://github.com/sindresorhus/sublime-autoprefixer
 
 ---
 
-
+```css
+.one{
+    backgorund-color:indigo;
+    color:#ebebeb;
+    font-size:2rem;
+    display:flex;
+    align:center;
+    justify:center;
+}
+```
 
 
 
