@@ -7,4 +7,5 @@
 * [响应式web设计](web.md)
   * [前言](web/qian-yan.md)
   * [媒体查询](web/mei-ti-cha-xun.md)
+  * [弹性布局与响应式图片](web/dan-xing-bu-ju-yu-xiang-ying-shi-tu-pian.md)
 
