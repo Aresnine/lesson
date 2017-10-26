@@ -82,6 +82,8 @@ sublime Text https://github.com/sindresorhus/sublime-autoprefixer
 
 ---
 
+**完美文本居中**
+
 ```css
 .one{
     backgorund-color:indigo;
@@ -96,7 +98,97 @@ sublime Text https://github.com/sindresorhus/sublime-autoprefixer
 ```
 说明：
     display:flex;这是flexbox的根本所在，把当前元素设置为一个flexbox（不是block或inline-block之类的）
-    align-items
+    align-items:这是要在flexbox沿交叉轴对齐项目（在这个例子中垂直居中文本）
+    justify-content：在这里设置内容沿主轴居中
+```
+
+---
+
+**偏移**
+
+_正序_
+
+```HTML
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>flex弹性布局2----自定义导航栏---正序</title>
+	<style type="text/css">
+		div{
+			display: flex;
+			align-items:center;
+			padding:10px;
+		}
+
+		a{
+			margin-right:20px;
+			
+		}
+
+		#last{
+			/*auto会导致最后的a标签使用所有剩余的外边距*/
+			margin-left:auto;
+		}
+
+
+	</style>
+</head>
+<body>
+	<div>
+		<a href="">111</a>
+		<a href="">222</a>
+		<a href="">333</a>
+		<a href="">444</a>
+		<a id="last" href="">555</a>
+	</div>
+
+
+</body>
+</html>
+```
+
+_反序_
+
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>flex弹性布局2----自定义导航栏---反序1</title>
+	<style type="text/css">
+		div{
+			display: flex;
+			align-items:center;
+			padding:10px;
+			flex-direction:row-reverse;
+		}
+
+		a{
+			margin-left:20px;
+			
+		}
+
+		#last{
+		
+			margin-right:auto;
+		}
+
+
+	</style>
+</head>
+<body>
+	<div>
+		<a href="">111</a>
+		<a href="">222</a>
+		<a href="">333</a>
+		<a href="">444</a>
+		<a id="last" href="">555</a>
+	</div>
+
+
+</body>
+</html>
 ```
 
 
