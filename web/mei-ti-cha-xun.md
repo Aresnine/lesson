@@ -101,7 +101,7 @@ css中的媒体查询可以使用任意的长度单位
 px 像素
 em 1em=16px         1em=父元素的fontsize px
 
-rem root element    而rem是相对于根元素<html> 
+rem root element    而rem是相对于根元素<html>  1rem=根元素（html）的fontsize px
 ```
 
 
