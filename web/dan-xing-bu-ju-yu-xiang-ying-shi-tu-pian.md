@@ -112,36 +112,36 @@ _正序_
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>flex弹性布局2----自定义导航栏---正序</title>
-	<style type="text/css">
-		div{
-			display: flex;
-			align-items:center;
-			padding:10px;
-		}
+    <meta charset="UTF-8">
+    <title>flex弹性布局2----自定义导航栏---正序</title>
+    <style type="text/css">
+        div{
+            display: flex;
+            align-items:center;
+            padding:10px;
+        }
 
-		a{
-			margin-right:20px;
-			
-		}
+        a{
+            margin-right:20px;
 
-		#last{
-			/*auto会导致最后的a标签使用所有剩余的外边距*/
-			margin-left:auto;
-		}
+        }
+
+        #last{
+            /*auto会导致最后的a标签使用所有剩余的外边距*/
+            margin-left:auto;
+        }
 
 
-	</style>
+    </style>
 </head>
 <body>
-	<div>
-		<a href="">111</a>
-		<a href="">222</a>
-		<a href="">333</a>
-		<a href="">444</a>
-		<a id="last" href="">555</a>
-	</div>
+    <div>
+        <a href="">111</a>
+        <a href="">222</a>
+        <a href="">333</a>
+        <a href="">444</a>
+        <a id="last" href="">555</a>
+    </div>
 
 
 </body>
@@ -154,37 +154,38 @@ _反序_
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>flex弹性布局2----自定义导航栏---反序1</title>
-	<style type="text/css">
-		div{
-			display: flex;
-			align-items:center;
-			padding:10px;
-			flex-direction:row-reverse;
-		}
+    <meta charset="UTF-8">
+    <title>flex弹性布局2----自定义导航栏---反序1</title>
+    <style type="text/css">
+        div{
+            display: flex;
+            align-items:center;
+            padding:10px;
+            /*设定主轴的方向*/
+            flex-direction:row-reverse;
+        }
 
-		a{
-			margin-left:20px;
-			
-		}
+        a{
+            margin-left:20px;
 
-		#last{
-		
-			margin-right:auto;
-		}
+        }
+
+        #last{
+
+            margin-right:auto;
+        }
 
 
-	</style>
+    </style>
 </head>
 <body>
-	<div>
-		<a href="">111</a>
-		<a href="">222</a>
-		<a href="">333</a>
-		<a href="">444</a>
-		<a id="last" href="">555</a>
-	</div>
+    <div>
+        <a href="">111</a>
+        <a href="">222</a>
+        <a href="">333</a>
+        <a href="">444</a>
+        <a id="last" href="">555</a>
+    </div>
 
 
 </body>
