@@ -99,7 +99,7 @@ css中的媒体查询可以使用任意的长度单位
 
 ```
 px 像素
-em 1em=16px   1 ÷ 父元素的font-size × 需要转换的像素值 = em值   1em=fontsizepx
+em 1em=16px   1 ÷ 父元素的font-size × 需要转换的像素值 = em值   1em=父元素的fontsize px
 
 rem
 ```
