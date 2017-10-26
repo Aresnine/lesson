@@ -76,5 +76,13 @@ flex在使用的时候，由于新特性的原因需要加上前缀
 sublime Text https://github.com/sindresorhus/sublime-autoprefixer
 ```
 
+# 3、使用Flexbox
+
+**flexbox的4个关键特性：方向、对齐、次序和弹性。**
+
+---
+
+
+
 
 
