@@ -58,5 +58,82 @@ body{
 }
 ```
 
+
+
 通过视口尺寸的不同控制了视口的样式，虽然css并不支持真正意义上的条件逻辑但是通过此种方法变向实现了条件逻辑判断
+
+
+
+## 在link标签中使用媒体查询
+
+```
+可以再<link>标签的media属性中指定设备类型（screen和print），为不同的设备应用样式。
+
+<link rel="stylesheet" type="text/css"  media="screen" href="css文件路径" />
+
+说明：此样式应用在屏幕设备上
+    media的属性值:
+        screen 屏幕
+        screen and （orientation：portrait）  屏幕 且屏幕方向垂直
+        not screen and (oriention：portrait) 垂直朝向的非屏幕设备
+```
+
+组合媒体查询
+
+```
+        
+        
+
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
