@@ -26,5 +26,23 @@ CSS3媒体查询可以让我们针对特定的设备能力或条件为网页应�
     屏幕的方向水平或垂直、视口或大或小，等等。通过媒体查询建立逻辑判断
 ```
 
+## 媒体查询的语法
+
+```
+@media screen and （min-width：320px）{
+    body{
+        background-color:yellow;
+    }
+}
+
+@media screen and （min-width：550px）{
+    body{
+        background-color:yellow;
+    }
+}
+
+
+```
+
 
 
