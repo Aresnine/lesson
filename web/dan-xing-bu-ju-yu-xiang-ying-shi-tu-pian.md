@@ -66,6 +66,10 @@
 # 2、Flexbox
 
 ```
+flex在使用的时候，由于新特性的原因需要加上前缀
+    -ms-      是    Microsof
+    -webkit-  是    WebKit
+    -moz-     是    Mozilla
 
 ```
 
