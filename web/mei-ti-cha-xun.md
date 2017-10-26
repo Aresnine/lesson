@@ -58,11 +58,7 @@ body{
 }
 ```
 
-
-
 通过视口尺寸的不同控制了视口的样式，虽然css并不支持真正意义上的条件逻辑但是通过此种方法变向实现了条件逻辑判断
-
-
 
 ## 在link标签中使用媒体查询
 
@@ -78,62 +74,26 @@ body{
         not screen and (oriention：portrait) 垂直朝向的非屏幕设备
 ```
 
-组合媒体查询
+## 组合媒体查询
 
 ```
-        
-        
+可以将多个媒体查询串在一起。
+
+<link rel="stylesheet" media="screen and (orientation: portrait) and
+(min-width: 800px)" href="800wide-portrait-screen.css" />
+所有条件成立则应用样式
 
 
+<link rel="stylesheet" media="screen and (orientation: portrait) and
+(min-width: 800px), projection" href="800wide-portrait-screen.css" />
+只要有一个条件成立则应用样式
+    注意:
+        1、逗号分隔每个媒体查询表达式
+        2、在projection（投影机）之后没有任何特性/值对。这样省略特定的特性，表示适用于具备任何特性的该媒体类型。在这里表示适用于任何
+    投影机
+    
+css中的媒体查询可以使用任意的长度单位
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
