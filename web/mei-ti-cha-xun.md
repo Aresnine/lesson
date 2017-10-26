@@ -117,29 +117,35 @@ rem root element    而rem是相对于根元素<html>  1rem=根元素（html）�
 注意：使用CSS中的@import会增加HTTP请求（进而影响加载速度），因此慎用。
 ```
 
-
-
 ## 媒体查询可以测试哪些特性
 
-**媒体查询**
+     **媒体查询中用的最多特性是视口宽度\(width\)**
 
+```
+width:视口宽度
+height：视口高度
+device-width：渲染表面的宽度（可以认为是设备的屏幕宽度）
+device-height：渲染表面的高度（可以认为是设备的屏幕高度）
+orientation：设备方向是水平还是垂直
+aspect-ratio：视口的宽高比。 16:9 的宽屏显示器可以写成aspect-ratio：16/9
+color：颜色组分的位深。比如min-color:16 表示设备至少支持16位深
+color-index：设备颜色查找表中的条目数，值必须是数值，且不能为负。
+monochrome：单色帧缓冲中表示每个像素的位数，值必须是数值（整数），比如
+monochrome: 2，且不能为负。
+resolution：屏幕或打印分辨率，比如min-resolution: 300dpi。也可以接受每厘
+米多少点，比如min-resolution: 118dpcm。
+scan：针对电视的逐行扫描（progressive）和隔行扫描（interlace）。例如720p HD TV（720p
+中的p表示progressive，即逐行）可以使用scan: progressive来判断； 而1080i HD TV
+（1080i中的i表示interlace，即隔行）可以使用scan: interlace来判断。
+grid：设备基于栅格还是位图。
+上面列表中的特性，除scan和grid外，都可以加上min或max前缀以指定范围。看看下面的
+代码：
+@import url("tiny.css") screen and (min-width:200px) and (maxwidth:
+360px);
+这里使用最大宽度（max-width）和最小宽度（min-width）设定了范围。因此，tiny.css
+只在设备视口介于200像素和360像素之间时才会被应用。
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+```
 
 
 
