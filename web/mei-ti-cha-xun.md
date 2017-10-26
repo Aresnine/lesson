@@ -49,7 +49,7 @@ CSS3媒体查询可以让我们针对特定的设备能力或条件为网页应�
 
 @media screen and （min-width：980px）{
     body{
-        background-color:yellow;
+        background-color:gray;
     }
 }
 ```
