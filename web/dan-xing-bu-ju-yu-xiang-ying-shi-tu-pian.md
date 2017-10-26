@@ -88,9 +88,15 @@ sublime Text https://github.com/sindresorhus/sublime-autoprefixer
     color:#ebebeb;
     font-size:2rem;
     display:flex;
-    align:center;
-    justify:center;
+    align-items:center;
+    justify-content:center;
 }
+```
+
+```
+说明：
+    display:flex;这是flexbox的根本所在，把当前元素设置为一个flexbox（不是block或inline-block之类的）
+    align-items
 ```
 
 
