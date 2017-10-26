@@ -192,5 +192,154 @@ _反序_
 </html>
 ```
 
+_垂直_
+
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>flex弹性布局2----自定义导航栏---垂直</title>
+	<style type="text/css">
+		div{
+			display: flex;
+			align-items:center;
+			padding:10px;
+			/*flex-direction:column;*/
+			flex-direction:column-reverse;
+
+
+			/*row：
+			    主轴与行内轴方向作为默认的书写模式。即横向从左到右排列（左对齐）。
+			row-reverse：
+			    对齐方式与row相反。
+			column：
+			    主轴与块轴方向作为默认的书写模式。即纵向从上往下排列（顶对齐）。
+			column-reverse：
+			    对齐方式与column相反。*/
+
+		}
+
+		
+
+
+	</style>
+</head>
+<body>
+	<div>
+		<a id="first" href="">111</a>
+		<a href="">222</a>
+		<a href="">333</a>
+		<a href="">444</a>
+		<a  href="">555</a>
+	</div>
+
+
+</body>
+</html>
+```
+
+_**垂直响应式**_
+
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>flex弹性布局x-----响应布局</title>
+	<style type="text/css">
+		div{
+			display: flex;
+			/*align-items:center;*/
+			padding:10px;
+			
+			height:50px;
+
+
+			background-color:#666;
+		}
+
+		a{
+			/*margin-left:20px;*/
+			width:50px;
+			height:60px;
+			text-decoration:none;
+			background-color:yellowgreen;
+			font-size:25px;
+			line-height:60px;
+			
+		}
+
+		@media (min-width:320px){
+			div{
+				flex-direction:column;
+				align-items:left;
+
+			}
+		}
+
+		@media (min-width:550px){
+			div{
+				/*flex-direction:column-reverse;*/
+				align-items:right;
+				background-color:green;
+			}
+		}
+
+		@media (min-width:768px){
+			div{
+				flex-direction:row;
+				/*align-items:center;*/
+				background-color:green;
+			}
+
+			a{
+				margin-right:20px;
+
+			}
+
+			#last{
+				margin-left:auto;
+			}
+		}
+
+
+		@media (min-width:980px){
+			div{
+				flex-direction:row-reverse;
+				align-items:center;
+				background-color:green;
+			}
+
+			a{
+				margin-left:20px;
+
+			}
+
+			#last{
+				margin-right:auto;
+				margin-left:0px;
+			}
+		}
+
+
+		
+
+	</style>
+</head>
+<body>
+	<div>
+		<a  href="">111</a>
+		<a 	href="">222</a>
+		<a  href="">333</a>
+		<a  href="">444</a>
+		<a  href="" id='last'>555</a>
+	</div>
+
+
+</body>
+</html>
+```
+
 
 
