@@ -580,16 +580,42 @@ inline-block和inline-table一样保留元素间的空白。如果这个元素�
 
 **如果将Flexbox的方向设为row，则主轴就是横轴，而交叉轴就是纵轴。反之，如果将flexbox的方向设为column，则主轴就是纵轴，而交叉轴为横轴。**
 
-
-
 ---
-
-
 
 ## align-items
 
 ```
 align-items在交叉轴上定位元素
+```
+
+## align-self
+
+```
+有时候，可能只需要把某一个元素按不同方式对齐。这个元素可以使用align-self属性决定自己的对齐方式。
+```
+
+## 交叉抽的对齐
+
+```
+Flexbox为交叉对齐提供了以下元素
+    1、flex-start：让元素从flexbox的起始边开始
+    2、flex-end：会沿Flexbox父元素的末尾对齐该元素
+    3、center：把元素放在Flexbox元素的中间
+    4、baseline：让Flexbox元素中的所有项沿基线对齐
+    5、stretch：让Flexbox中所有项（没交叉轴）拉伸至与父元素一样大
+```
+
+## justify-content
+
+```
+控制沿Flexbox主轴对齐的属性是justify-content（对于非Flexbox/块级元素，也已经有了关于justify-self属性的建议）。
+justify-content属性值：
+    1、flex-start
+    2、flex-end
+    3、center
+    4、space-between 在子元素之间添加相同的空白
+    5、space-around  在子元素两边（两端，浏览器的边缘处）添加相同的空白
+    
 ```
 
 
