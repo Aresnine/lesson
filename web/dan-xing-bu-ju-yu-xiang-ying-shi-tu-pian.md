@@ -406,96 +406,96 @@ _**垂直响应式**_
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>flex弹性布局x-----响应布局</title>
-	<style type="text/css">
-		div{
-			display: flex;
-			/*align-items:center;*/
-			padding:10px;
-			
-			height:50px;
+    <meta charset="UTF-8">
+    <title>flex弹性布局x-----响应布局</title>
+    <style type="text/css">
+        div{
+            display: flex;
+            /*align-items:center;*/
+            padding:10px;
+
+            height:50px;
 
 
-			background-color:#666;
-		}
+            background-color:#666;
+        }
 
-		a{
-			/*margin-left:20px;*/
-			width:50px;
-			height:60px;
-			text-decoration:none;
-			background-color:yellowgreen;
-			font-size:25px;
-			line-height:60px;
-			
-		}
+        a{
+            /*margin-left:20px;*/
+            width:50px;
+            height:60px;
+            text-decoration:none;
+            background-color:yellowgreen;
+            font-size:25px;
+            line-height:60px;
 
-		@media (min-width:320px){
-			div{
-				flex-direction:column;
-				align-items:left;
+        }
 
-			}
-		}
+        @media (min-width:320px){
+            div{
+                flex-direction:column;
+                align-items:left;
 
-		@media (min-width:550px){
-			div{
-				/*flex-direction:column-reverse;*/
-				align-items:right;
-				background-color:green;
-			}
-		}
+            }
+        }
 
-		@media (min-width:768px){
-			div{
-				flex-direction:row;
-				/*align-items:center;*/
-				background-color:green;
-			}
+        @media (min-width:550px){
+            div{
+                /*flex-direction:column-reverse;*/
+                align-items:right;
+                background-color:green;
+            }
+        }
 
-			a{
-				margin-right:20px;
+        @media (min-width:768px){
+            div{
+                flex-direction:row;
+                /*align-items:center;*/
+                background-color:green;
+            }
 
-			}
+            a{
+                margin-right:20px;
 
-			#last{
-				margin-left:auto;
-			}
-		}
+            }
 
-
-		@media (min-width:980px){
-			div{
-				flex-direction:row-reverse;
-				align-items:center;
-				background-color:green;
-			}
-
-			a{
-				margin-left:20px;
-
-			}
-
-			#last{
-				margin-right:auto;
-				margin-left:0px;
-			}
-		}
+            #last{
+                margin-left:auto;
+            }
+        }
 
 
-		
+        @media (min-width:980px){
+            div{
+                flex-direction:row-reverse;
+                align-items:center;
+                background-color:green;
+            }
 
-	</style>
+            a{
+                margin-left:20px;
+
+            }
+
+            #last{
+                margin-right:auto;
+                margin-left:0px;
+            }
+        }
+
+
+
+
+    </style>
 </head>
 <body>
-	<div>
-		<a  href="">111</a>
-		<a 	href="">222</a>
-		<a  href="">333</a>
-		<a  href="">444</a>
-		<a  href="" id='last'>555</a>
-	</div>
+    <div>
+        <a  href="">111</a>
+        <a     href="">222</a>
+        <a  href="">333</a>
+        <a  href="">444</a>
+        <a  href="" id='last'>555</a>
+    </div>
 
 
 </body>
@@ -506,5 +506,7 @@ _**垂直响应式**_
 
 **Flexbox与有与inline-block和inline-table对应的inline-flex变体。得益于他的居中能力，通过行内伸缩模型可以轻松实现一些搞怪效果，比如：**
 
+```
 
+```
 
