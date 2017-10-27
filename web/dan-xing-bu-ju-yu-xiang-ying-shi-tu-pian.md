@@ -689,46 +689,86 @@ justify-content属性值：
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>主轴对齐</title>
-	<style type="text/css">
-		/*
-			justify-content控制主轴对齐方式
-			属性值为：
-				flex-start
-				center
-				flex-end
-				space-between（[speɪs]）
-				space-around
+    <meta charset="UTF-8">
+    <title>主轴对齐</title>
+    <style type="text/css">
+        /*
+            justify-content控制主轴对齐方式
+            属性值为：
+                flex-start
+                center
+                flex-end
+                space-between（[speɪs]）
+                space-around
 
-				所以justify-content可以告诉浏览器怎么处理其余空间。space-between会在子元素之间添加相同宽度的空白，而space-around则在它们两边各添加相同宽度的空白
+                所以justify-content可以告诉浏览器怎么处理其余空间。space-between会在子元素之间添加相同宽度的空白，而space-around则在它们两边各添加相同宽度的空白
 
-		*/
-		.father{
-			width:100%;
-			height:300px;
-			background-color:indigo;
-			display:flex;
-			/*justify-content:space-between;*/
-			justify-content:space-around;
-		}
+        */
+        .father{
+            width:100%;
+            height:300px;
+            background-color:indigo;
+            display:flex;
+            /*justify-content:space-between;*/
+            justify-content:space-around;
+        }
 
-		.child{
-			width:25%;
-			height:100px;
-			background-color:green;
-			color:red;
-		}
-	</style>
+        .child{
+            width:25%;
+            height:100px;
+            background-color:green;
+            color:red;
+        }
+    </style>
 </head>
 <body>
-	<div class='father'>
-		<div class='child'>111111111111111111111111111111</div>
-		<div class='child'>222222222222222222222222222222</div>
-		<div class='child'>333333333333333333333333333333</div>
-	</div>
+    <div class='father'>
+        <div class='child'>111111111111111111111111111111</div>
+        <div class='child'>222222222222222222222222222222</div>
+        <div class='child'>333333333333333333333333333333</div>
+    </div>
 </body>
 </html>
+```
+
+## Flex
+
+```
+flex-item定义过宽度，除了width，还可以通过flex属性来定义宽度，或者叫“伸缩性（flexiness）”
+
+例子：
+    div{
+        border: 1px solid #ebebeb;
+        background-color: #34005B;
+        display: flex;
+        height: 100px;
+        flex: 1;
+    }
+    
+这里的flex实际上是三个属性合体的简写：flex-grow、flex-shrink和flex-basis    
+
+    flex：  1      1    100
+            |      |     |
+            |      |     |
+            伸展   收缩  基准
+            
+  
+```
+
+对于伸缩项，如果flex属性存在（且浏览器支持 ），则使用它的值控制元素的大小，忽略宽度和高度值的设置，即使他们的声明
+
+位于flex声明之后，也会被忽略。
+
+```
+flex-grow：当前元素在空间润徐德情况下最大的伸展量
+
+flex-shrink：空间不足时，元素的收缩量
+
+flex-basis：伸缩的基准值
+```
+
+```
+  
 ```
 
 
