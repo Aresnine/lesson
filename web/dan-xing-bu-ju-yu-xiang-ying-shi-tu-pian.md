@@ -507,7 +507,33 @@ _**垂直响应式**_
 **Flexbox与有与inline-block和inline-table对应的inline-flex变体。得益于他的居中能力，通过行内伸缩模型可以轻松实现一些搞怪效果，比如：**
 
 ```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>行内伸缩</title>
+	<style type="text/css">
+		p{
+			display:inline-flex;
+			align-items:center;
+			height:200px;
+			padding:0 40px;
+			background-color:indigo;
+			border-radius:20px;
+			color:#ddd;
+		}
+	</style>
+</head>
+<body>
+	<p>supreman is my hero!</p>
+</body>
+</html>
+```
 
+**注意：**
+
+```
+如果将某个元素无端地设为display：inline-flex（比如包含该元素的元素没有被设置为display:flex）
 ```
 
 
