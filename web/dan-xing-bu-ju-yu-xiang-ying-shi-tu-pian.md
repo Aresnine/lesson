@@ -615,8 +615,7 @@ justify-content属性值：
     3、center
     4、space-between 在子元素之间添加相同的空白
     5、space-around  在子元素两边（两端，浏览器的边缘处）添加相同的空白
-    
 ```
 
-
+**案例**
 
