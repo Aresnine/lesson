@@ -346,8 +346,52 @@ _**垂直响应式**_
 ```
 要想垂直反序堆叠，只要改成flex-direction:column-reverse;
 
-要知道，有一个flex-flow属性，是flex-direction和flex-wrap的合体。比如，flex-flow：row wrap；就是把方向（）
+要知道，有一个flex-flow属性，是flex-direction和flex-wrap的合体。比如，flex-flow：row wrap；就是把方向（flex-direction）
+设置为行(row),把折行选项设置为折行（wrap）。不过，至少一开始分别设置两个属性会更清楚一些。另外，flex-wrap属性在最早的Flexbox
+实现中也不存在，如果合起来写，在某些浏览器中可能导致整条声明失效。
 ```
+
+
+
+### 不同媒体查询中的不同Flexbox布局
+
+**例子：窄视口中让各项垂直堆叠，而在空间允许的情况下改成行式布局**
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
