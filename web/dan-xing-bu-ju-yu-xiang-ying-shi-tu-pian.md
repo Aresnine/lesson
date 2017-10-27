@@ -619,3 +619,73 @@ justify-content属性值：
 
 **案例**
 
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>flexbox的交叉轴对齐方式----align-items</title>
+	<style type="text/css">
+		/*
+			flex-direction决定主轴在什么地方默认为row水平 column垂直
+			align-items在交叉轴上定位元素
+
+			交叉轴的对齐方式：
+				flex-start：把元素的对齐设置为flex-start，可以让元素从Flexbox父元素的起始边
+				flex-end：把元素的对齐设置为flex-end，会沿Flexbox父元素的末尾对齐该元素。
+				center：把元素放在Flexbox元素的中间。
+				baseline：让Flexbox元素中的所有项沿基线对齐。
+				stretch：让Flexbox中的所有项（没交叉轴）拉伸至与父元素一样大。
+开始。
+		*/
+		#wrapper{
+			background-color:indigo;
+			width:400px;
+			height:200px;
+			display:flex;
+			/*flex-direction:column;*/
+			/*flex-direction:row-reverse;*/
+			/*align-items:center;*/
+			/*align-items:flex-end;*/
+			align-items:start;
+		}
+
+		#inner1{
+			color:white;
+			width:200px;
+			height:100px;
+			display:flex;
+			background-color:green;
+		}
+
+		.inner{
+			/*
+				清除弗雷元素对本身的影响
+			*/
+			align-self:flex-end;
+		}
+
+	</style>
+</head>
+<body>
+	<div id='wrapper'>
+		<div id='inner1'>
+			flexbox对齐方式最重要的就是理解坐标轴。
+		</div>
+		<div class='inner'>
+		flexbox有两个轴，一个主轴一个交叉轴。
+		这两个轴代表什么取决于flexbox的方向设置。
+		</div>
+		<div >
+		当flexbox的方向设为row，则主轴就是x轴，交叉轴就是y轴。
+		当flexbox的方向设为column，则主轴就是y轴，交叉轴就是x轴。
+		</div>
+	</div>
+</body>
+</html>
+```
+
+
+
+
+
