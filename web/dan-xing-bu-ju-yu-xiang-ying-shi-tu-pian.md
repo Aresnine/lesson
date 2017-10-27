@@ -353,52 +353,52 @@ _**垂直响应式**_
 
 ### 不同媒体查询中的不同Flexbox布局
 
-**例子：窄视口中让各项垂直堆叠，而在空间允许的情况下改成行式布局**
+**例子：垂直居中对齐**
 
 ```
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>flex弹性布局2----自定义导航栏---垂直</title>
-	<style type="text/css">
-		div{
-			display: flex;
-			align-items:center;
-			padding:10px;
-			/*flex-direction:column;*/
-			flex-direction:column-reverse;
+    <meta charset="UTF-8">
+    <title>flex弹性布局2----自定义导航栏---垂直</title>
+    <style type="text/css">
+        div{
+            display: flex;
+            align-items:center;
+            padding:10px;
+            /*flex-direction:column;*/
+            flex-direction:column-reverse;
 
 
-			/*row：
-			    主轴与行内轴方向作为默认的书写模式。即横向从左到右排列（左对齐）。
-			row-reverse：
-			    对齐方式与row相反。
-			column：
-			    主轴与块轴方向作为默认的书写模式。即纵向从上往下排列（顶对齐）。
-			column-reverse：
-			    对齐方式与column相反。*/
+            /*row：
+                主轴与行内轴方向作为默认的书写模式。即横向从左到右排列（左对齐）。
+            row-reverse：
+                对齐方式与row相反。
+            column：
+                主轴与块轴方向作为默认的书写模式。即纵向从上往下排列（顶对齐）。
+            column-reverse：
+                对齐方式与column相反。*/
 
-		}
-
-		
+        }
 
 
-	</style>
+
+
+    </style>
 </head>
 <body>
-	<div>
-		<a id="first" href="">111</a>
-		<a href="">222</a>
-		<a href="">333</a>
-		<a href="">444</a>
-		<a  href="">555</a>
-	</div>
+    <div>
+        <a id="first" href="">111</a>
+        <a href="">222</a>
+        <a href="">333</a>
+        <a href="">444</a>
+        <a  href="">555</a>
+    </div>
 
 
 </body>
 </html>
 ```
 
-
+**窄视口中让各项垂直堆叠，而在空间允许的情况下改成行式布局**
 
