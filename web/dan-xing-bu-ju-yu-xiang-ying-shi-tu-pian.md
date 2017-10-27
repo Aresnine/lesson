@@ -574,13 +574,23 @@ inline-block和inline-table一样保留元素间的空白。如果这个元素�
 </html>
 ```
 
-## Flexbox的对齐
+## Flexbox的对齐 {#图形说明}
 
 **flexbox的对齐最重要的是理解坐标轴。有两个坐标轴，“主轴”和“交叉轴”。这两个轴代表什么取决于Flexbox排列的方向。比如**
 
 **如果将Flexbox的方向设为row，则主轴就是横轴，而交叉轴就是纵轴。反之，如果将flexbox的方向设为column，则主轴就是纵轴，而交叉轴为横轴。**
 
-![](/assets/web01.png)
+
+
+---
+
+
+
+## align-items
+
+```
+align-items在交叉轴上定位元素
+```
 
 
 
