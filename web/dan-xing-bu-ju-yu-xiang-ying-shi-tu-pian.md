@@ -744,15 +744,13 @@ flex-item定义过宽度，除了width，还可以通过flex属性来定义宽�
         height: 100px;
         flex: 1;
     }
-    
+
 这里的flex实际上是三个属性合体的简写：flex-grow、flex-shrink和flex-basis    
 
     flex：  1      1    100
             |      |     |
             |      |     |
             伸展   收缩  基准
-            
-  
 ```
 
 对于伸缩项，如果flex属性存在（且浏览器支持 ），则使用它的值控制元素的大小，忽略宽度和高度值的设置，即使他们的声明
@@ -768,7 +766,56 @@ flex-basis：伸缩的基准值
 ```
 
 ```
-  
+<!DOCTYPE html>
+<html >
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+	/*
+
+	flex是flex-grow、flex-shrink和flex-basis的缩写
+		flex-grow:可伸展性
+		flex-shrink：可伸缩性
+		flex-basis：基准值
+
+
+	flex: 1 2 auto的意思是在有空间的情况下可以伸展1部分，在空间不足时可以收缩1部分，而基准大小是内容的固有宽度（即不伸缩的情况下内容的大小）。
+	flex: 0 0 50px的意思是，这个伸缩项既不伸也不缩，基准为50像素（即无论是否存在自由空间，都是50像素）。那么flex: 2 0 50%呢？意思就是会多占用两个可用空间，不收缩，基准为50%。但愿这几个例子能帮大家理解flex属性。
+
+	*/
+
+		.wapper{
+			width:100%;
+			display:flex;
+			border:1px solid red;
+
+		}
+		.items {
+			border: 1px solid #ebebeb;
+			background-color: #34005B;
+			display: flex;
+			height: 100px;
+		}
+		.a {
+			flex: 2 0 auto;
+		}
+		.b,.c {
+			flex: 1 0 auto;
+		}
+	</style>
+</head>
+<body>
+	<div class="wapper">
+		<div class="items a">1111111111
+		</div>
+		<div class="items b">2222222222
+		</div>
+		<div class="items c">3333333333333
+		</div>
+	</div>
+</body>
+</html>
 ```
 
 
