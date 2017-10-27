@@ -510,22 +510,22 @@ _**垂直响应式**_
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>行内伸缩</title>
-	<style type="text/css">
-		p{
-			display:inline-flex;
-			align-items:center;
-			height:200px;
-			padding:0 40px;
-			background-color:indigo;
-			border-radius:20px;
-			color:#ddd;
-		}
-	</style>
+    <meta charset="UTF-8">
+    <title>行内伸缩</title>
+    <style type="text/css">
+        p{
+            display:inline-flex;
+            align-items:center;
+            height:200px;
+            padding:0 40px;
+            background-color:indigo;
+            border-radius:20px;
+            color:#ddd;
+        }
+    </style>
 </head>
 <body>
-	<p>supreman is my hero!</p>
+    <p>supreman is my hero!</p>
 </body>
 </html>
 ```
@@ -533,7 +533,45 @@ _**垂直响应式**_
 **注意：**
 
 ```
-如果将某个元素无端地设为display：inline-flex（比如包含该元素的元素没有被设置为display:flex）
+如果将某个元素无端地设为display：inline-flex（比如包含该元素的元素没有被设置为display:flex）,那么这个元素就会像
+inline-block和inline-table一样保留元素间的空白。如果这个元素处于一个Flexbox中，空白就会消失，就跟table中的table-cell一样
+```
+
+##### **行内伸缩的例子2 说明上面的注意**
+
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>行内收缩</title>
+	<style type="text/css">
+		/*div{
+
+			display:flex;
+		}*/
+
+		/*
+			注意：如果inline-flex不在flexbox中则会保留元素之间的空白，但是如果它在一个flexbox元素中，则会取消空白
+		*/
+		a{
+			display:inline-flex;
+			align-items:center;
+			width:200px;
+			height:300px;
+			background-color:pink;
+			padding:0 12px;
+			border-radius:6px;
+			margin:10px;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		这是一个行内测试----》<a href="xxoo.com" >xxoo</a><a href="xxoo.com" >xxoo</a><a href="xxoo.com" >xxoo</a><a href="xxoo.com" >xxoo</a><a href="xxoo.com" >xxoo</a>
+	</div>
+</body>
+</html>
 ```
 
 
