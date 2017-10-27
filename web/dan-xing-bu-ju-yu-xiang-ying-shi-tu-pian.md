@@ -623,69 +623,113 @@ justify-content属性值：
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>flexbox的交叉轴对齐方式----align-items</title>
-	<style type="text/css">
-		/*
-			flex-direction决定主轴在什么地方默认为row水平 column垂直
-			align-items在交叉轴上定位元素
+    <meta charset="UTF-8">
+    <title>flexbox的交叉轴对齐方式----align-items</title>
+    <style type="text/css">
+        /*
+            flex-direction决定主轴在什么地方默认为row水平 column垂直
+            align-items在交叉轴上定位元素
 
-			交叉轴的对齐方式：
-				flex-start：把元素的对齐设置为flex-start，可以让元素从Flexbox父元素的起始边
-				flex-end：把元素的对齐设置为flex-end，会沿Flexbox父元素的末尾对齐该元素。
-				center：把元素放在Flexbox元素的中间。
-				baseline：让Flexbox元素中的所有项沿基线对齐。
-				stretch：让Flexbox中的所有项（没交叉轴）拉伸至与父元素一样大。
+            交叉轴的对齐方式：
+                flex-start：把元素的对齐设置为flex-start，可以让元素从Flexbox父元素的起始边
+                flex-end：把元素的对齐设置为flex-end，会沿Flexbox父元素的末尾对齐该元素。
+                center：把元素放在Flexbox元素的中间。
+                baseline：让Flexbox元素中的所有项沿基线对齐。
+                stretch：让Flexbox中的所有项（没交叉轴）拉伸至与父元素一样大。
 开始。
-		*/
-		#wrapper{
-			background-color:indigo;
-			width:400px;
-			height:200px;
-			display:flex;
-			/*flex-direction:column;*/
-			/*flex-direction:row-reverse;*/
-			/*align-items:center;*/
-			/*align-items:flex-end;*/
-			align-items:start;
-		}
+        */
+        #wrapper{
+            background-color:indigo;
+            width:400px;
+            height:200px;
+            display:flex;
+            /*flex-direction:column;*/
+            /*flex-direction:row-reverse;*/
+            /*align-items:center;*/
+            /*align-items:flex-end;*/
+            align-items:start;
+        }
 
-		#inner1{
-			color:white;
-			width:200px;
-			height:100px;
-			display:flex;
-			background-color:green;
-		}
+        #inner1{
+            color:white;
+            width:200px;
+            height:100px;
+            display:flex;
+            background-color:green;
+        }
 
-		.inner{
-			/*
-				清除弗雷元素对本身的影响
-			*/
-			align-self:flex-end;
-		}
+        .inner{
+            /*
+                清除弗雷元素对本身的影响
+            */
+            align-self:flex-end;
+        }
 
-	</style>
+    </style>
 </head>
 <body>
-	<div id='wrapper'>
-		<div id='inner1'>
-			flexbox对齐方式最重要的就是理解坐标轴。
-		</div>
-		<div class='inner'>
-		flexbox有两个轴，一个主轴一个交叉轴。
-		这两个轴代表什么取决于flexbox的方向设置。
-		</div>
-		<div >
-		当flexbox的方向设为row，则主轴就是x轴，交叉轴就是y轴。
-		当flexbox的方向设为column，则主轴就是y轴，交叉轴就是x轴。
-		</div>
-	</div>
+    <div id='wrapper'>
+        <div id='inner1'>
+            flexbox对齐方式最重要的就是理解坐标轴。
+        </div>
+        <div class='inner'>
+        flexbox有两个轴，一个主轴一个交叉轴。
+        这两个轴代表什么取决于flexbox的方向设置。
+        </div>
+        <div >
+        当flexbox的方向设为row，则主轴就是x轴，交叉轴就是y轴。
+        当flexbox的方向设为column，则主轴就是y轴，交叉轴就是x轴。
+        </div>
+    </div>
 </body>
 </html>
 ```
 
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>主轴对齐</title>
+	<style type="text/css">
+		/*
+			justify-content控制主轴对齐方式
+			属性值为：
+				flex-start
+				center
+				flex-end
+				space-between（[speɪs]）
+				space-around
 
+				所以justify-content可以告诉浏览器怎么处理其余空间。space-between会在子元素之间添加相同宽度的空白，而space-around则在它们两边各添加相同宽度的空白
+
+		*/
+		.father{
+			width:100%;
+			height:300px;
+			background-color:indigo;
+			display:flex;
+			/*justify-content:space-between;*/
+			justify-content:space-around;
+		}
+
+		.child{
+			width:25%;
+			height:100px;
+			background-color:green;
+			color:red;
+		}
+	</style>
+</head>
+<body>
+	<div class='father'>
+		<div class='child'>111111111111111111111111111111</div>
+		<div class='child'>222222222222222222222222222222</div>
+		<div class='child'>333333333333333333333333333333</div>
+	</div>
+</body>
+</html>
+```
 
 
 
