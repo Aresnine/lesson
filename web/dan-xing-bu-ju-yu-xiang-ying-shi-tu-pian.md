@@ -543,36 +543,44 @@ inline-block和inline-table一样保留元素间的空白。如果这个元素�
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>行内收缩</title>
-	<style type="text/css">
-		/*div{
+    <meta charset="UTF-8">
+    <title>行内收缩</title>
+    <style type="text/css">
+        /*div{
 
-			display:flex;
-		}*/
+            display:flex;
+        }*/
 
-		/*
-			注意：如果inline-flex不在flexbox中则会保留元素之间的空白，但是如果它在一个flexbox元素中，则会取消空白
-		*/
-		a{
-			display:inline-flex;
-			align-items:center;
-			width:200px;
-			height:300px;
-			background-color:pink;
-			padding:0 12px;
-			border-radius:6px;
-			margin:10px;
-		}
-	</style>
+        /*
+            注意：如果inline-flex不在flexbox中则会保留元素之间的空白，但是如果它在一个flexbox元素中，则会取消空白
+        */
+        a{
+            display:inline-flex;
+            align-items:center;
+            width:200px;
+            height:300px;
+            background-color:pink;
+            padding:0 12px;
+            border-radius:6px;
+            margin:10px;
+        }
+    </style>
 </head>
 <body>
-	<div>
-		这是一个行内测试----》<a href="xxoo.com" >xxoo</a><a href="xxoo.com" >xxoo</a><a href="xxoo.com" >xxoo</a><a href="xxoo.com" >xxoo</a><a href="xxoo.com" >xxoo</a>
-	</div>
+    <div>
+        这是一个行内测试----》<a href="xxoo.com" >xxoo</a><a href="xxoo.com" >xxoo</a><a href="xxoo.com" >xxoo</a><a href="xxoo.com" >xxoo</a><a href="xxoo.com" >xxoo</a>
+    </div>
 </body>
 </html>
 ```
+
+## Flexbox的对齐
+
+**flexbox的对齐最重要的是理解坐标轴。有两个坐标轴，“主轴”和“交叉轴”。这两个轴代表什么取决于Flexbox排列的方向。比如**
+
+**如果将Flexbox的方向设为row，则主轴就是横轴，而交叉轴就是纵轴。反之，如果将flexbox的方向设为column，则主轴就是纵轴，而交叉轴为横轴。**
+
+![](/assets/web01.png)
 
 
 
